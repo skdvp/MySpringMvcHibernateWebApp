@@ -4,10 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelloWorldController {
+public class StartController {
     @GetMapping("/")
-    public String world() {
-        return "test/helloworld_controller/helloworld";
+    public String start() {
+        return "redirect:/user_list";
     }
-
 }

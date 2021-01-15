@@ -14,6 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @GetMapping
     public String showAllUsers(Model model) {
         // GET /user_list всех людей из DAO и передаём на отображение в представление
